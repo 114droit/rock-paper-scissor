@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Header-Bereich -->
-  <header class="flex flex-col justify-center items-center">
+  <header class="flex flex-col justify-center items-center mt-4 mb-10">
     <h1 class="my-1">Rock Paper Scissors</h1>
     <div class="border-2 border-slate-400">
       <span>Score</span>
@@ -19,20 +19,20 @@
   </header>
 
   <!-- Hauptbereich mit Buttons -->
-  <main>
-    <button data-choice="paper" class="border-8 border-blue-300 rounded-full size-20 hover:size-24 px-2">
+  <main class="flex justify-center items-center w-auto h-60 pb-9">
+    <button data-choice="paper" class="self-end border-8 border-blue-300 rounded-full size-20 hover:size-24 px-2">
       <img src="/images/paper.svg" alt="Paper" />
     </button>
-    <button data-choice="scissors" class="border-8 border-green-300 rounded-full size-20 hover:size-24 px-2">
+    <button data-choice="scissors" class="self-start border-8 border-green-300 rounded-full size-20 hover:size-24 px-2">
       <img src="/images/scissors.svg" alt="Scissors" />
     </button>
-    <button data-choice="rock" class="border-8 border-red-300 rounded-full size-20 hover:size-24 px-2">
+    <button data-choice="rock" class="self-end border-8 border-red-300 rounded-full size-20 hover:size-24 px-2">
       <img src="/images/rock.svg" alt="Rock" />
     </button>
   </main>
 
   <!-- Startbildschirm -->
-  <div id="startscreen">
+  <div id="startscreen" class="flex justify-center items-center w-screen h-screen">
     <h1>Rock</h1>
     <h2>Paper</h2>
     <h3>Scissors</h3>
