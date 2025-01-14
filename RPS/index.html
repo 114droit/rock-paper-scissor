@@ -8,26 +8,26 @@
   <script type="module" defer src="/src/main.js"></script>
   <title>Rock Paper Scissors</title>
 </head>
-<body class="class">
+<body>
   <!-- Header-Bereich -->
-  <header>
-    <h1>Rock Paper Scissors</h1>
-    <div>
+  <header class="flex flex-col justify-center items-center">
+    <h1 class="my-1">Rock Paper Scissors</h1>
+    <div class="border-2 border-slate-400">
       <span>Score</span>
-      <span id="score">0</span>
+      <span id="score" class="ml-0.5">0</span>
     </div>
   </header>
 
   <!-- Hauptbereich mit Buttons -->
   <main>
-    <button data-choice="paper">
-      <img src="./images/paper.svg" alt="Paper" />
+    <button data-choice="paper" class="border-8 border-blue-300 rounded-full size-20 hover:size-24 px-2">
+      <img src="/images/paper.svg" alt="Paper" />
     </button>
-    <button data-choice="scissors">
-      <img src="./images/scissors.svg" alt="Scissors" />
+    <button data-choice="scissors" class="border-8 border-green-300 rounded-full size-20 hover:size-24 px-2">
+      <img src="/images/scissors.svg" alt="Scissors" />
     </button>
-    <button data-choice="rock">
-      <img src="./images/rock.svg" alt="Rock" />
+    <button data-choice="rock" class="border-8 border-red-300 rounded-full size-20 hover:size-24 px-2">
+      <img src="/images/rock.svg" alt="Rock" />
     </button>
   </main>
 
@@ -43,7 +43,7 @@
   <div id="rules">
     <h2>Rules</h2>
     <p>Rock Paper Scissors is a game that is played between two players...</p>
-    <img src="./images/close.svg" alt="Close" id="closebutton" />
+    <img src="/images/close.svg" alt="Close" id="closebutton" />
   </div>
 
   <!-- Ergebnisanzeige -->
