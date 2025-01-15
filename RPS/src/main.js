@@ -14,20 +14,20 @@ const choiceButtons = document.querySelectorAll("button[data-choice]");
 
 choiceButtons.forEach((button) => {
     button.addEventListener('click', playRound());
-})
+});
 
 startButton.addEventListener('click', startGame);
 
 function startGame() {
     startScreen.classList.add('hidden');
-}
+};
 
 function playRound(event) {
     const playerChoice = event.target.dataset.choiceButtons;
     const computerChoice = getComputerChoice();
     const result = getResult(playerChoice, computerChoice);
     updateUI(playerChoice, computerChoice, result);
-}
+};
 
 function updateUI(playerChoice, computerChoice, result) {
     userchoice.textContent = playerChoice;
@@ -38,4 +38,4 @@ function updateUI(playerChoice, computerChoice, result) {
     } else if (result === 'lose') {
         score.textContent = parseInt(score.textContent) - 1;
     }
-}
+};
